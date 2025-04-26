@@ -2,7 +2,7 @@
 layout: post
 title: "How to Prepare Your Walls for Painting"
 date: 2023-02-20
-author: Sarah Johnson
+author: Dominick Pazo
 image: img/blog-2.jpg
 categories: [DIY, Painting Tips]
 tags: [wall preparation, painting tips, home improvement]
