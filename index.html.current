@@ -9,10 +9,10 @@ title: Home
         <div class="row justify-content-start">
             <div class="col-lg-8 text-center text-lg-start">
                 <h1 class="display-1 text-dark">We Bring Your Home To Lively Colors</h1>
-                <p class="fs-4 text-dark mb-4">Nonumy diam dolores est ipsum diam amet lorem clita clita sit eirmod duo clita dolore dolor ut diam diam justo sed est</p>
+                <p class="fs-4 text-dark mb-4">Professional painting services for residential and commercial properties. Transform your space with our expert team.</p>
                 <div class="pt-2">
-                    <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mx-2">Get A Quote</a>
-                    <a href="" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2">Contact Us</a>
+                    <a href="{{ '/contact.html' | relative_url }}" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mx-2">Get A Quote</a>
+                    <a href="{{ '/contact.html' | relative_url }}" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -26,9 +26,9 @@ title: Home
         <div class="row gx-0 mb-3 mb-lg-0">
             <div class="col-lg-6 my-lg-5 py-lg-5">
                 <div class="about-start bg-primary p-5">
-                    <h1 class="display-5 mb-4">Welcome To Painter</h1>
-                    <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                    <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+                    <h1 class="display-5 mb-4">Welcome To {{ site.title }}</h1>
+                    <p>We are a professional painting company dedicated to providing high-quality services that exceed our customers' expectations. With years of experience in the industry, our skilled team delivers exceptional results for both residential and commercial properties.</p>
+                    <a href="{{ '/about.html' | relative_url }}" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
@@ -46,8 +46,8 @@ title: Home
             <div class="col-lg-6 my-lg-5 py-lg-5">
                 <div class="about-end bg-primary p-5">
                     <h1 class="display-5 mb-4">Why Choose Us?</h1>
-                    <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                    <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
+                    <p>Our team combines professionalism, attention to detail, and premium materials to deliver outstanding results on every project. We stand behind our work with satisfaction guarantees and are committed to completing projects on time and within budget.</p>
+                    <a href="{{ '/contact.html' | relative_url }}" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ title: Home
             <div class="col-lg-6">
                 <div class="bg-white text-center p-5">
                     <h1 class="mb-4">Get A Quote</h1>
-                    <form>
+                    <form action="">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
                                 <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
@@ -222,7 +222,7 @@ title: Home
         <div class="row g-0 justify-content-start">
             <div class="col-lg-6">
                 <h1 class="display-5 mb-4">Do You Have Any Project?</h1>
-                <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                <p class="fs-4 fw-normal">Ready to transform your space with a fresh coat of paint? Our team of professionals is here to help bring your vision to life with quality materials and expert craftsmanship.</p>
                 <a href="{{ '/contact.html' | relative_url }}" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
             </div>
         </div>
