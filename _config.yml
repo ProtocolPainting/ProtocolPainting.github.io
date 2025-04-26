@@ -1,20 +1,23 @@
 # Site settings
 title: Protocol Painting
-email: info@example.com
+email: info@protocolpainting.com
 description: >-
-  Professional painting services for residential and commercial clients.
+  Professional painting services for residential and commercial clients in Bellingham, WA.
+  Quality interior and exterior painting with exceptional customer service.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-phone: "+012 345 6789"
-address: "123 Street, New York, USA"
+phone: "+13609208423"
+phone_display: "360-920-8423"
+address: "Bellingham, WA"
+owner: "Dominick Pazo"
 
 # Social media
 social:
-  facebook: "#"
-  twitter: "#"
-  linkedin: "#"
-  instagram: "#"
-  youtube: "#"
+  facebook: "https://facebook.com/protocolpainting"
+  instagram: "https://instagram.com/protocolpainting"
+  linkedin: "https://linkedin.com/company/protocolpainting"
+  google: "https://g.page/protocolpainting"
+  yelp: "https://yelp.com/biz/protocolpainting"
 
 # Build settings
 markdown: kramdown
