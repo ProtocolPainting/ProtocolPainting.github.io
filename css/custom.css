@@ -1,0 +1,71 @@
+/* Additional styles to fix layout issues */
+
+/* Fix About section overlapping */
+@media (min-width: 992px) {
+    .about-start {
+        position: relative;
+        margin-right: -50px; /* Reduced from -90px to -50px */
+        z-index: 1;
+        padding-right: 30px; /* Added padding */
+    }
+
+    .about-end {
+        position: relative;
+        margin-left: -50px; /* Reduced from -90px to -50px */
+        z-index: 1;
+        padding-left: 30px; /* Added padding */
+    }
+}
+
+/* Fix spacing in responsive views */
+@media (max-width: 991.98px) {
+    .about-start, 
+    .about-end {
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+/* Fix tag cloud */
+.tag-cloud-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+
+.tag-cloud-item {
+    margin: 4px;
+    padding: 6px 12px;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.tag-cloud-item:hover {
+    background-color: var(--secondary);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Fix blog post titles */
+.blog-item .h4.text-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Fix responsive padding */
+@media (max-width: 768px) {
+    .container-fluid.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .container.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}

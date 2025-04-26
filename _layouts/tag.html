@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Blog
 ---
 
 <!-- Page Header Start -->
@@ -8,11 +7,13 @@ title: Blog
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Blog Grid</h1>
+                <h1 class="display-4 text-white">Posts tagged with "{{ page.tag }}"</h1>
                 <div class="d-inline-flex text-white">
                     <p class="m-0"><a class="text-white" href="{{ '/' | relative_url }}">Home</a></p>
                     <p class="m-0 px-2">/</p>
-                    <p class="m-0">Blog Grid</p>
+                    <p class="m-0"><a class="text-white" href="{{ '/blog.html' | relative_url }}">Blog</a></p>
+                    <p class="m-0 px-2">/</p>
+                    <p class="m-0">Tag: {{ page.tag }}</p>
                 </div>
             </div>
         </div>
@@ -27,7 +28,7 @@ title: Blog
             <!-- Blog list Start -->
             <div class="col-lg-8">
                 <div class="row g-5">
-                    {% for post in site.posts %}
+                    {% for post in site.tags[page.tag] %}
                     <div class="col-xl-6 col-lg-12 col-md-6">
                         <div class="blog-item bg-primary">
                             {% if post.image %}
@@ -69,28 +70,20 @@ title: Blog
 
             <!-- Sidebar Start -->
             <div class="col-lg-4">
-                <!-- Search Form Start -->
+                <!-- All Tags Start -->
                 <div class="mb-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control p-3" placeholder="Keyword">
-                        <button class="btn btn-primary px-4"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                <!-- Search Form End -->
-
-                <!-- Category Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Categories</h2>
-                    <div class="d-flex flex-column justify-content-start bg-primary p-4">
-                        {% for category in site.categories %}
-                        <a class="h5 mb-3" href="{{ '/category/' | append: category[0] | downcase | relative_url }}">
-                            <i class="fa fa-angle-right me-2"></i>{{ category[0] }}
-                            <span class="float-end">({{ category[1].size }})</span>
+                    <h2 class="mb-4">All Tags</h2>
+                    <div class="tag-cloud-container">
+                        {% assign tags = site.tags | sort %}
+                        {% for tag in tags %}
+                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" 
+                          class="tag-cloud-item {% if tag[0] == page.tag %}bg-secondary text-white{% endif %}">
+                          {{ tag[0] }} ({{ tag[1].size }})
                         </a>
                         {% endfor %}
                     </div>
                 </div>
-                <!-- Category End -->
+                <!-- All Tags End -->
 
                 <!-- Recent Post Start -->
                 <div class="mb-5">
@@ -107,18 +100,6 @@ title: Blog
                     {% endfor %}
                 </div>
                 <!-- Recent Post End -->
-
-                <!-- Tags Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Tag Cloud</h2>
-                    <div class="tag-cloud-container">
-                        {% assign tags = site.tags | sort %}
-                        {% for tag in tags %}
-                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="tag-cloud-item">{{ tag[0] }} ({{ tag[1].size }})</a>
-                        {% endfor %}
-                    </div>
-                </div>
-                <!-- Tags End -->
             </div>
             <!-- Sidebar End -->
         </div>

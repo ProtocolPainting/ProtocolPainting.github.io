@@ -56,11 +56,11 @@ layout: default
                         </div>
                         <div class="d-flex align-items-center">
                             {% if page.tags %}
-                            <small>Tags:
+                            <div class="tag-cloud-container ms-2">
                                 {% for tag in page.tags %}
-                                <span class="badge bg-secondary ms-1">{{ tag }}</span>
+                                <a href="{{ '/tag/' | append: tag | downcase | relative_url }}" class="tag-cloud-item">{{ tag }}</a>
                                 {% endfor %}
-                            </small>
+                            </div>
                             {% endif %}
                         </div>
                     </div>
@@ -105,10 +105,10 @@ layout: default
                 <!-- Tags Start -->
                 <div>
                     <h2 class="mb-4">Tag Cloud</h2>
-                    <div class="d-flex flex-wrap m-n1">
+                    <div class="tag-cloud-container">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="btn btn-primary m-1">{{ tag[0] }}</a>
+                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="tag-cloud-item">{{ tag[0] }} ({{ tag[1].size }})</a>
                         {% endfor %}
                     </div>
                 </div>

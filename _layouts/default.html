@@ -27,7 +27,9 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ '/css/style.css' | relative_url }}" rel="stylesheet">
-
+    
+    <!-- Custom Fixes Stylesheet -->
+    <link href="{{ '/css/custom.css' | relative_url }}" rel="stylesheet">
     {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
     <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css">
