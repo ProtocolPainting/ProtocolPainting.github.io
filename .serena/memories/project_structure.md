@@ -19,7 +19,6 @@ The current project follows a typical HTML template structure:
 ├── about.html             # About page
 ├── blog.html              # Blog listings page
 ├── contact.html           # Contact page
-├── detail.html            # Blog detail page
 ├── index.html             # Homepage
 ├── service.html           # Services page
 ├── team.html              # Team page

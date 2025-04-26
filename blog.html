@@ -111,10 +111,10 @@ title: Blog
                 <!-- Tags Start -->
                 <div class="mb-5">
                     <h2 class="mb-4">Tag Cloud</h2>
-                    <div class="tag-cloud-container">
+                    <div class="d-flex flex-wrap m-n1">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="tag-cloud-item">{{ tag[0] }} ({{ tag[1].size }})</a>
+                        <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="btn btn-primary m-1">{{ tag[0] }}</a>
                         {% endfor %}
                     </div>
                 </div>
