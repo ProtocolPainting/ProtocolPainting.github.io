@@ -25,7 +25,6 @@ When converting to Jekyll, it is critical to maintain the author's attribution l
 
 ```html
 <p class="mb-0">Designed by <a class="text-dark fw-bold" href="https://htmlcodex.com">HTML Codex</a></p>
-<p><br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
 ```
 
 These attribution links must be kept in all pages of the Jekyll site to remain compliant with the license.
