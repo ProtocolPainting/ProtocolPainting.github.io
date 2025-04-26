@@ -70,7 +70,7 @@ layout: default
                     <h2 class="mb-4">Categories</h2>
                     <div class="d-flex flex-column justify-content-start bg-primary p-4">
                         {% for category in site.categories %}
-                        <a class="h5 mb-3 {% if category[0] == page.category %}text-secondary{% endif %}" href="{{ '/categories/' | append: category[0] | downcase | slugify | relative_url }}/">
+                        <a class="h5 mb-3 {% if category[0] == page.category %}text-secondary{% endif %}" href="{{ '/categories/' | append: category[0] | downcase | slugify | append: '/' | relative_url }}">
                             <i class="fa fa-angle-right me-2"></i>{{ category[0] }}
                             <span class="float-end">({{ category[1].size }})</span>
                         </a>
@@ -100,7 +100,7 @@ layout: default
                     <div class="d-flex flex-wrap m-n1">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="{{ '/tags/' | append: tag[0] | downcase | slugify | relative_url }}/" class="btn btn-primary m-1">{{ tag[0] }}</a>
+                        <a href="{{ '/tags/' | append: tag[0] | downcase | slugify | append: '/' | relative_url }}" class="btn btn-primary m-1">{{ tag[0] }}</a>
                         {% endfor %}
                     </div>
                 </div>
