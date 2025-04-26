@@ -21,14 +21,16 @@
 
     <!-- Libraries Stylesheet -->
     <link href="{{ '/lib/owlcarousel/assets/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ '/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="{{ '/css/style.css' | relative_url }}" rel="stylesheet">
     
-    <!-- Custom Fixes Stylesheet -->
+    <!-- Mobile Fixes -->
+    <link href="{{ '/css/mobile-fixes.css' | relative_url }}" rel="stylesheet">
+
+    {% if page.custom_css %}
     <link href="{{ '/css/custom.css' | relative_url }}" rel="stylesheet">
     {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}

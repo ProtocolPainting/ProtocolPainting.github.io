@@ -7,13 +7,13 @@ layout: default
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-white">{{ page.title }}</h1>
+                <h1 class="display-4 text-white">Category: {{ page.category }}</h1>
                 <div class="d-inline-flex text-white">
                     <p class="m-0"><a class="text-white" href="{{ '/' | relative_url }}">Home</a></p>
                     <p class="m-0 px-2">/</p>
                     <p class="m-0"><a class="text-white" href="{{ '/blog.html' | relative_url }}">Blog</a></p>
                     <p class="m-0 px-2">/</p>
-                    <p class="m-0">{{ page.title }}</p>
+                    <p class="m-0">Category: {{ page.category }}</p>
                 </div>
             </div>
         </div>
@@ -25,48 +25,48 @@ layout: default
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row g-5">
-            <!-- Blog Post Start -->
+            <!-- Blog list Start -->
             <div class="col-lg-8">
-                <div class="blog-item bg-primary">
-                    {% if page.image %}
-                    <img class="img-fluid w-100" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-                    {% endif %}
-                    
-                    <div class="d-flex align-items-center">
-                        <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
-                            <i class="fa fa-calendar-alt text-primary mb-2"></i>
-                            <p class="m-0 text-white">{{ page.date | date: "%b %d" }}</p>
-                            <small class="text-white">{{ page.date | date: "%Y" }}</small>
-                        </div>
-                        <h2 class="mb-0">{{ page.title }}</h2>
-                    </div>
-                    
-                    <div class="p-4">
-                        {{ content }}
-                    </div>
-                    
-                    <div class="d-flex justify-content-between border-top border-secondary p-4">
-                        <div class="d-flex align-items-center">
-                            {% if page.author_image %}
-                            <img class="rounded-circle me-2" src="{{ page.author_image | relative_url }}" width="30" height="30" alt="{{ page.author }}">
-                            {% else %}
-                            <img class="rounded-circle me-2" src="{{ '/img/user.jpg' | relative_url }}" width="30" height="30" alt="{{ page.author }}">
+                <div class="row g-5">
+                    {% for post in site.categories[page.category] %}
+                    <div class="col-xl-6 col-lg-12 col-md-6">
+                        <div class="blog-item bg-primary">
+                            {% if post.image %}
+                            <img class="img-fluid w-100" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
                             {% endif %}
-                            <small class="text-uppercase">{{ page.author | default: "Admin" }}</small>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            {% if page.tags %}
-                            <small>
-                                {% for tag in page.tags %}
-                                <a href="{{ '/tag/' | append: tag | downcase | relative_url }}" class="badge bg-secondary ms-1">{{ tag }}</a>
-                                {% endfor %}
-                            </small>
-                            {% endif %}
+                            <div class="d-flex align-items-center">
+                                <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
+                                    <i class="fa fa-calendar-alt text-primary mb-2"></i>
+                                    <p class="m-0 text-white">{{ post.date | date: "%b %d" }}</p>
+                                    <small class="text-white">{{ post.date | date: "%Y" }}</small>
+                                </div>
+                                <a class="h4 m-0 text-truncate me-4" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                            </div>
+                            <div class="d-flex justify-content-between border-top border-secondary p-4">
+                                <div class="d-flex align-items-center">
+                                    {% if post.author_image %}
+                                    <img class="rounded-circle me-2" src="{{ post.author_image | relative_url }}" width="30" height="30" alt="{{ post.author }}">
+                                    {% else %}
+                                    <img class="rounded-circle me-2" src="{{ '/img/user.jpg' | relative_url }}" width="30" height="30" alt="{{ post.author }}">
+                                    {% endif %}
+                                    <small class="text-uppercase">{{ post.author }}</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    {% if post.categories %}
+                                    <small>
+                                        {% for category in post.categories limit:1 %}
+                                        <i class="fas fa-folder text-secondary me-2"></i>{{ category }}
+                                        {% endfor %}
+                                    </small>
+                                    {% endif %}
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
-            <!-- Blog Post End -->
+            <!-- Blog list End -->
 
             <!-- Sidebar Start -->
             <div class="col-lg-4">
@@ -84,7 +84,7 @@ layout: default
                     <h2 class="mb-4">Categories</h2>
                     <div class="d-flex flex-column justify-content-start bg-primary p-4">
                         {% for category in site.categories %}
-                        <a class="h5 mb-3" href="{{ '/category/' | append: category[0] | downcase | relative_url }}">
+                        <a class="h5 mb-3 {% if category[0] == page.category %}text-secondary{% endif %}" href="{{ '/category/' | append: category[0] | downcase | relative_url }}">
                             <i class="fa fa-angle-right me-2"></i>{{ category[0] }}
                             <span class="float-end">({{ category[1].size }})</span>
                         </a>
@@ -97,7 +97,6 @@ layout: default
                 <div class="mb-5">
                     <h2 class="mb-4">Recent Posts</h2>
                     {% for post in site.posts limit:5 %}
-                    {% if post.url != page.url %}
                     <div class="d-flex mb-3">
                         {% if post.image %}
                         <img class="img-fluid" src="{{ post.image | relative_url }}" style="width: 100px; height: 100px; object-fit: cover;" alt="{{ post.title }}">
@@ -106,7 +105,6 @@ layout: default
                         {% endif %}
                         <a href="{{ post.url | relative_url }}" class="h5 d-flex align-items-center bg-primary px-3 mb-0">{{ post.title }}</a>
                     </div>
-                    {% endif %}
                     {% endfor %}
                 </div>
                 <!-- Recent Post End -->
@@ -119,3 +117,12 @@ layout: default
                         {% for tag in tags %}
                         <a href="{{ '/tag/' | append: tag[0] | downcase | relative_url }}" class="btn btn-primary m-1">{{ tag[0] }}</a>
                         {% endfor %}
+                    </div>
+                </div>
+                <!-- Tags End -->
+            </div>
+            <!-- Sidebar End -->
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
