@@ -2,24 +2,10 @@
 layout: default
 ---
 
-<!-- Page Header Start -->
-<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Posts tagged with "{{ page.tag }}"</h1>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="{{ '/' | relative_url }}">Home</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0"><a class="text-white" href="{{ '/blog.html' | relative_url }}">Blog</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0">Tag: {{ page.tag }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Page Header End -->
+{% assign hero_title = "Posts tagged with \"" | append: page.tag | append: "\"" %}
+{% assign hero_description = "Browse our collection of articles and painting tips related to " | append: page.tag | append: "." %}
+
+{% include hero.html %}
 
 <!-- Blog Start -->
 <div class="container-fluid py-5">

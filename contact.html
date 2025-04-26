@@ -1,24 +1,11 @@
 ---
 layout: default
 title: Contact Us
+hero_title: Get In Touch With Us
+hero_description: Reach out to our team for professional painting services, free quotes, or any questions about your project.
 ---
 
-<!-- Page Header Start -->
-<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Contact Us</h1>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0"><a class="text-white" href="{{ '/' | relative_url }}">Home</a></p>
-                    <p class="m-0 px-2">/</p>
-                    <p class="m-0">Contact</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Page Header End -->
+{% include hero.html %}
 
 <!-- Contact Start -->
 <div class="container-fluid py-5">
@@ -74,7 +61,7 @@ title: Contact Us
                                 <textarea class="form-control bg-light border-0" rows="5" placeholder="Message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn btn-secondary rounded-pill py-3" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
