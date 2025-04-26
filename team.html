@@ -15,30 +15,56 @@ hero_description: Meet the skilled painters and professionals behind Protocol Pa
             <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
         </div>
         <div class="row g-3">
-            {% for member in site.data.team %}
-            <div class="col-lg-4 col-md-6">
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
-                    <div class="team-text">
-                        <div class="team-social">
-                            {% if member.social.twitter %}
-                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.twitter }}"><i class="fab fa-twitter"></i></a>
-                            {% endif %}
-                            {% if member.social.facebook %}
-                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.facebook }}"><i class="fab fa-facebook-f"></i></a>
-                            {% endif %}
-                            {% if member.social.linkedin %}
-                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
-                            {% endif %}
-                        </div>
-                        <div class="mt-auto mb-3">
-                            <h4 class="mb-1">{{ member.name }}</h4>
-                            <span class="text-uppercase">{{ member.position }}</span>
+            {% if site.data.team.size == 1 %}
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    {% assign member = site.data.team[0] %}
+                    <div class="team-item">
+                        <img class="img-fluid w-100" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                        <div class="team-text">
+                            <div class="team-social">
+                                {% if member.social.twitter %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.twitter }}"><i class="fab fa-twitter"></i></a>
+                                {% endif %}
+                                {% if member.social.facebook %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.facebook }}"><i class="fab fa-facebook-f"></i></a>
+                                {% endif %}
+                                {% if member.social.linkedin %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+                                {% endif %}
+                            </div>
+                            <div class="mt-auto mb-3">
+                                <h4 class="mb-1">{{ member.name }}</h4>
+                                <span class="text-uppercase">{{ member.position }}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endfor %}
+            {% else %}
+                {% for member in site.data.team %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <img class="img-fluid w-100" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                        <div class="team-text">
+                            <div class="team-social">
+                                {% if member.social.twitter %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.twitter }}"><i class="fab fa-twitter"></i></a>
+                                {% endif %}
+                                {% if member.social.facebook %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.facebook }}"><i class="fab fa-facebook-f"></i></a>
+                                {% endif %}
+                                {% if member.social.linkedin %}
+                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="{{ member.social.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+                                {% endif %}
+                            </div>
+                            <div class="mt-auto mb-3">
+                                <h4 class="mb-1">{{ member.name }}</h4>
+                                <span class="text-uppercase">{{ member.position }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
