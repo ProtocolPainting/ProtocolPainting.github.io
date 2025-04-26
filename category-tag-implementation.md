@@ -24,8 +24,8 @@ jekyll-archives:
     category: category
     tag: tag
   permalinks:
-    category: /category/:name/
-    tag: /tag/:name/
+    category: /categories/:name/
+    tag: /tags/:name/
 ```
 
 **Note**: This approach doesn't work on GitHub Pages due to plugin restrictions.
@@ -39,15 +39,15 @@ This approach uses a manual file for each category/tag:
    - `_layouts/tag.html`
 
 2. Create individual files for each category/tag:
-   - `category/category-name.html`
-   - `tag/tag-name.html`
+   - `categories/category-name.md`
+   - `tags/tag-name.md`
 
 3. Set front matter in each file:
 ```yaml
 ---
 layout: category
 category: "Category Name"
-permalink: /category/category-name/
+permalink: /categories/category-name/
 ---
 ```
 
@@ -64,6 +64,30 @@ tags: [tag1, tag2, tag3]
 ---
 ```
 
+## Adding New Categories or Tags
+
+When adding new categories or tags, follow these steps:
+
+1. For a new category "Home Decor":
+```yaml
+# File: categories/home-decor.md
+---
+layout: category
+category: "Home Decor"
+permalink: /categories/home-decor/
+---
+```
+
+2. For a new tag "painting techniques":
+```yaml
+# File: tags/painting-techniques.md
+---
+layout: tag
+tag: "painting techniques"
+permalink: /tags/painting-techniques/
+---
+```
+
 ## Recommendation
 
-The manual approach is most reliable for GitHub Pages and other Jekyll hosting platforms with restricted plugin access. When adding new categories or tags, create corresponding files in the category/ and tag/ directories.
+The manual approach is most reliable for GitHub Pages and other Jekyll hosting platforms with restricted plugin access.
