@@ -62,7 +62,8 @@ layout: default
                     <div class="d-flex flex-wrap m-n1">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="{{ '/tags/' | append: tag[0] | downcase | slugify | append: '/' | relative_url }}" 
+                        {% capture tag_slug %}{{ tag[0] | downcase | slugify }}{% endcapture %}
+                        <a href="{{ site.baseurl }}/tags/{{ tag_slug }}/" 
                           class="btn btn-primary m-1 {% if tag[0] == page.tag %}bg-secondary text-white{% endif %}">
                           {{ tag[0] }}
                         </a>

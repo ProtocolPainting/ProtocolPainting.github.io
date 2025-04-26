@@ -7,8 +7,8 @@
                 <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
                 <p class="mb-4">Ready to transform your space with professional painting services? Contact us today for a free consultation and estimate.</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>{{ site.address }}</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>{{ site.email }}</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>{{ site.phone }}</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a href="mailto:{{ site.email }}" class="text-light text-decoration-none">{{ site.email }}</a></p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i><a href="tel:{{ site.phone }}" class="text-light text-decoration-none">{{ site.phone_display }}</a></p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-primary">Our Services</h4>

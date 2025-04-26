@@ -44,7 +44,8 @@ layout: default
                             {% if page.tags %}
                             <small>
                                 {% for tag in page.tags %}
-                                <a href="{{ '/tags/' | append: tag | downcase | slugify | append: '/' | relative_url }}" class="badge bg-secondary ms-1">{{ tag }}</a>
+                                {% capture tag_slug %}{{ tag | downcase | slugify }}{% endcapture %}
+                                <a href="{{ site.baseurl }}/tags/{{ tag_slug }}/" class="badge bg-secondary ms-1">{{ tag }}</a>
                                 {% endfor %}
                             </small>
                             {% endif %}
@@ -70,7 +71,8 @@ layout: default
                     <h2 class="mb-4">Categories</h2>
                     <div class="d-flex flex-column justify-content-start bg-primary p-4">
                         {% for category in site.categories %}
-                        <a class="h5 mb-3" href="{{ '/categories/' | append: category[0] | downcase | slugify | append: '/' | relative_url }}">
+                        {% capture category_slug %}{{ category[0] | downcase | slugify }}{% endcapture %}
+                        <a class="h5 mb-3" href="{{ site.baseurl }}/categories/{{ category_slug }}/">
                             <i class="fa fa-angle-right me-2"></i>{{ category[0] }}
                             <span class="float-end">({{ category[1].size }})</span>
                         </a>
@@ -102,7 +104,8 @@ layout: default
                     <div class="d-flex flex-wrap m-n1">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="{{ '/tags/' | append: tag[0] | downcase | slugify | append: '/' | relative_url }}" class="btn btn-primary m-1">{{ tag[0] }}</a>
+                        {% capture tag_slug %}{{ tag[0] | downcase | slugify }}{% endcapture %}
+                        <a href="{{ site.baseurl }}/tags/{{ tag_slug }}/" class="btn btn-primary m-1">{{ tag[0] }}</a>
                         {% endfor %}
                     </div>
                 </div>

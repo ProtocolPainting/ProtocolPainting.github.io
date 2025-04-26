@@ -76,19 +76,19 @@ hero_description: Discover our comprehensive range of high-quality painting serv
             <div class="col-lg-6">
                 <div class="bg-primary h-100 p-5">
                     <h1 class="text-white mb-4">Get A Quote</h1>
-                    <form>
+                    <form action="mailto:{{ site.email }}" method="post" enctype="text/plain">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" name="name" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" name="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Phone" style="height: 55px;">
+                                <input type="text" name="phone" class="form-control bg-light border-0" placeholder="Your Phone" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
+                                <select name="service" class="form-select bg-light border-0" style="height: 55px;">
                                     <option selected>Select Service</option>
                                     {% for service in site.data.services %}
                                     <option value="{{ service.title }}">{{ service.title }}</option>
@@ -96,7 +96,7 @@ hero_description: Discover our comprehensive range of high-quality painting serv
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control bg-light border-0 py-3" rows="3" placeholder="Project Details"></textarea>
+                                <textarea name="details" class="form-control bg-light border-0 py-3" rows="3" placeholder="Project Details" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-secondary w-100 py-3" type="submit">Get A Quote</button>
