@@ -2,6 +2,8 @@
 layout: page
 title: Window Washing
 permalink: /services/window-washing.html
+hero_title: Window Washing Services
+hero_description: Professional window cleaning for crystal-clear, streak-free results that enhance your property's appearance and natural light.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">

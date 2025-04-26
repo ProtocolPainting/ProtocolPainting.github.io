@@ -2,6 +2,8 @@
 layout: page
 title: Wall Painting
 permalink: /services/wall-painting.html
+hero_title: Wall Painting Services
+hero_description: Expert wall painting solutions with decorative techniques, textured finishes, and specialized coatings for residential and commercial spaces.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">

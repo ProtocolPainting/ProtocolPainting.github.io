@@ -2,6 +2,8 @@
 layout: page
 title: Mildew Removal
 permalink: /services/mildew-removal.html
+hero_title: Mildew Removal Services
+hero_description: Thorough mildew and mold removal with preventative solutions to protect your property and ensure a healthy environment.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">

@@ -2,6 +2,8 @@
 layout: page
 title: Graffiti Removal
 permalink: /services/graffiti-removal.html
+hero_title: Graffiti Removal Services
+hero_description: Professional graffiti removal with eco-friendly methods and protective coatings to restore and protect your property.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">

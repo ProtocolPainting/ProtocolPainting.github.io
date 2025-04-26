@@ -2,6 +2,8 @@
 layout: page
 title: Floor Coating
 permalink: /services/floor-coating.html
+hero_title: Floor Coating Services
+hero_description: Professional floor coating solutions for residential, commercial, and industrial spaces with durability and aesthetic appeal.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">

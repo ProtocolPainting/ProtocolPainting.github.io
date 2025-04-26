@@ -2,6 +2,8 @@
 layout: page
 title: Regular Painting
 permalink: /services/regular-painting.html
+hero_title: Regular Painting Services
+hero_description: Professional interior and exterior painting for residential and commercial spaces with premium materials and expert craftsmanship.
 ---
 
 <div class="text-center mx-auto mb-5" style="max-width: 500px;">
