@@ -1,0 +1,23 @@
+- name: John Smith
+  position: Master Painter
+  image: img/team-1.jpg
+  social:
+    twitter: "#"
+    facebook: "#"
+    linkedin: "#"
+    
+- name: Sarah Johnson
+  position: Interior Designer
+  image: img/team-2.jpg
+  social:
+    twitter: "#"
+    facebook: "#"
+    linkedin: "#"
+    
+- name: Michael Davis
+  position: Color Specialist
+  image: img/team-3.jpg
+  social:
+    twitter: "#"
+    facebook: "#"
+    linkedin: "#"

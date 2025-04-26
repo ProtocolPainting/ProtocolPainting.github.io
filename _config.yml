@@ -1,0 +1,44 @@
+# Site settings
+title: Protocol Painting
+email: info@example.com
+description: >-
+  Professional painting services for residential and commercial clients.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+phone: "+012 345 6789"
+address: "123 Street, New York, USA"
+
+# Social media
+social:
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
+  instagram: "#"
+  youtube: "#"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  services:
+    output: true
+  team:
+    output: true
+  testimonials:
+    output: false
+  
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - LICENSE.txt
+  - READ-ME.txt

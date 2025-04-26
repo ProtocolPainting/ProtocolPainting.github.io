@@ -1,0 +1,15 @@
+# Redirect rules for Jekyll
+# These rules will be processed by Jekyll and output to the _site folder
+
+# Redirect old URLs to new URLs
+/services.html     /service.html
+/about-us.html     /about.html
+/contact-us.html   /contact.html
+/blogs.html        /blog.html
+
+# Redirect service category pages
+/painting-services/* /service.html
+/services/*         /service.html
+
+# Redirect old blog posts
+/blog/post/*        /blog.html

@@ -1,0 +1,29 @@
+- title: Regular Painting
+  icon: paint-brush
+  description: Professional interior and exterior painting services for residential and commercial properties.
+  url: /services/regular-painting.html
+
+- title: Wall Painting
+  icon: paint-roller
+  description: Specialized wall painting services including textured finishes, murals, and accent walls.
+  url: /services/wall-painting.html
+
+- title: Floor Coating
+  icon: brush
+  description: Durable floor coating solutions for concrete, wood, and other surfaces.
+  url: /services/floor-coating.html
+
+- title: Graffiti Removal
+  icon: eraser
+  description: Professional graffiti removal services that restore surfaces to their original condition.
+  url: /services/graffiti-removal.html
+
+- title: Mildew Removal
+  icon: spray-can
+  description: Safe and effective mildew and mold removal for indoor and outdoor surfaces.
+  url: /services/mildew-removal.html
+
+- title: Window Washing
+  icon: city
+  description: Professional window cleaning services for residential and commercial buildings.
+  url: /services/window-washing.html
