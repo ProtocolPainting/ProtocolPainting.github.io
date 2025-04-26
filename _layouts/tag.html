@@ -2,8 +2,10 @@
 layout: default
 ---
 
+{% capture page_tag %}{{ page.tag }}{% endcapture %}
 {% assign hero_title = "Posts tagged with \"" | append: page.tag | append: "\"" %}
 {% assign hero_description = "Browse our collection of articles and painting tips related to " | append: page.tag | append: "." %}
+{% assign title = page.tag %}
 
 {% include hero.html %}
 

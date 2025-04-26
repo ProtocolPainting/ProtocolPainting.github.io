@@ -4,6 +4,7 @@ layout: default
 
 {% assign hero_title = "Category: " | append: page.category %}
 {% assign hero_description = "Browse our collection of articles and painting tips in the " | append: page.category | append: " category." %}
+{% assign title = page.category %}
 
 {% include hero.html %}
 
@@ -56,15 +57,6 @@ layout: default
 
             <!-- Sidebar Start -->
             <div class="col-lg-4">
-                <!-- Search Form Start -->
-                <div class="mb-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control p-3" placeholder="Keyword">
-                        <button class="btn btn-primary px-4"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                <!-- Search Form End -->
-
                 <!-- Category Start -->
                 <div class="mb-5">
                     <h2 class="mb-4">Categories</h2>

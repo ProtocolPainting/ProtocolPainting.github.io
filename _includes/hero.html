@@ -13,7 +13,15 @@
                     {% else %}
                     <!-- Navigation buttons for other pages -->
                     <a href="{{ '/' | relative_url }}" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Home</a>
-                    <a href="{{ page.url | relative_url }}" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">{{ page.title }}</a>
+                    <a href="{{ page.url | relative_url }}" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">
+                        {% if page.layout == 'tag' %}
+                            {{ page.tag }}
+                        {% elsif page.layout == 'category' %}
+                            {{ page.category }}
+                        {% else %}
+                            {{ page.title }}
+                        {% endif %}
+                    </a>
                     {% endif %}
                 </div>
             </div>
