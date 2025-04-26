@@ -15,7 +15,7 @@ permalink: /services/regular-painting.html
     </div>
     <div class="col-lg-6">
         <h2>Professional Interior and Exterior Painting</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius, lectus at faucibus vehicula, eros arcu fringilla nulla, in cursus enim neque a dui. Praesent vitae dui eu tellus venenatis varius. Nulla facilisi. Donec eget nunc a nisl ullamcorper sagittis.</p>
+        <p>Experience exceptional interior and exterior painting services from Protocol Painting. We transform residential and commercial spaces with precision, quality materials, and attention to detail. Our team of seasoned professionals ensures a flawless finish that enhances your property's beauty and value.</p>
         
         <h4 class="mt-4">Our Process</h4>
         <ul>
@@ -33,7 +33,7 @@ permalink: /services/regular-painting.html
 <div class="row mt-5">
     <div class="col-12">
         <h3>Why Choose Our Regular Painting Service?</h3>
-        <p>Curabitur varius, lectus at faucibus vehicula, eros arcu fringilla nulla, in cursus enim neque a dui. Praesent vitae dui eu tellus venenatis varius. Nulla facilisi. Donec eget nunc a nisl ullamcorper sagittis.</p>
+        <p>At Protocol Painting, we stand out for our commitment to excellence, transparency, and customer satisfaction. We use eco-friendly, premium products to ensure lasting results that protect your investment and beautify your space for years to come.</p>
         
         <div class="row mt-4">
             <div class="col-md-4 mb-3">
@@ -54,7 +54,7 @@ permalink: /services/regular-painting.html
                 <div class="bg-primary p-4 text-center">
                     <i class="fa fa-3x fa-shield-alt text-secondary mb-2"></i>
                     <h5 class="mb-2">Satisfaction Guaranteed</h5>
-                    <p class="mb-0">We stand behind our work with a satisfaction guarantee</p>
+                    <p class="mb-0">We stand behind our work with a 100% satisfaction guarantee</p>
                 </div>
             </div>
         </div>
