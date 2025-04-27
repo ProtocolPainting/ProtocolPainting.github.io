@@ -3,4 +3,11 @@
   image: img/team-1.jpg
   social:
     facebook: "https://facebook.com/protocolpainting"
-    linkedin: "https://linkedin.com/in/dominickpazo"
+    linkedin: "https://linkedin.com/in/protocolpainting"
+- name: Syler Clayton
+  position: Website Designer
+  image: img/team-2.jpg
+  social:
+    linkedin: "https://linkedin.com/in/sylerclayton
+    twitter: "https://twitter.com/SylerClayton"
+    instagram: "https://www.instagram.com/sylerclayton/"

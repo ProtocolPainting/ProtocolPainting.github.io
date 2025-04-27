@@ -46,7 +46,7 @@ hero_description: Professional window cleaning for crystal-clear, streak-free re
             </div>
             <div class="col-md-4 mb-3">
                 <div class="bg-primary p-4 text-center">
-                    <i class="fa fa-3x fa-ladder text-secondary mb-2"></i>
+                    <i class="fa fa-3x fa-bars text-secondary mb-2"></i>
                     <h5 class="mb-2">Safe Access Equipment</h5>
                     <p class="mb-0">Proper tools to safely reach windows at any height</p>
                 </div>
