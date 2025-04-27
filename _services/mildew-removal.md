@@ -13,7 +13,7 @@ hero_description: Thorough mildew and mold removal with preventative solutions t
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-5.jpg' | relative_url }}" alt="Mildew Removal">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/mildew-removal.png' | relative_url }}" alt="Mildew Removal">
     </div>
     <div class="col-lg-6">
         <h2>Comprehensive Mildew Treatment Solutions</h2>

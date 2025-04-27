@@ -13,7 +13,7 @@ hero_description: Professional graffiti removal with eco-friendly methods and pr
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-4.jpg' | relative_url }}" alt="Graffiti Removal">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/graffiti-removal.png' | relative_url }}" alt="Graffiti Removal">
     </div>
     <div class="col-lg-6">
         <h2>Effective Graffiti Removal Solutions</h2>

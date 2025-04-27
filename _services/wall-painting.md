@@ -13,7 +13,7 @@ hero_description: Expert wall painting solutions with decorative techniques, tex
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-2.jpg' | relative_url }}" alt="Wall Painting">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/wall-painting.png' | relative_url }}" alt="Wall Painting">
     </div>
     <div class="col-lg-6">
         <h2>Specialized Wall Painting Solutions</h2>

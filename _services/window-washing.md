@@ -25,7 +25,6 @@ hero_description: Professional window cleaning for crystal-clear, streak-free re
             <li>Screen cleaning and frame wiping</li>
             <li>Sill and track cleaning</li>
             <li>Hard water stain removal</li>
-            <li>High-rise window cleaning</li>
         </ul>
         
         <a href="{{ '/contact.html' | relative_url }}" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Request a Quote</a>
