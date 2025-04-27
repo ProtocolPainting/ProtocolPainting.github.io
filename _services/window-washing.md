@@ -13,7 +13,7 @@ hero_description: Professional window cleaning for crystal-clear, streak-free re
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-6.jpg' | relative_url }}" alt="Window Washing">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/window-washing.png' | relative_url }}" alt="Window Washing">
     </div>
     <div class="col-lg-6">
         <h2>Professional Window Cleaning Solutions</h2>

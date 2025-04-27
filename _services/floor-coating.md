@@ -13,7 +13,7 @@ hero_description: Professional floor coating solutions for residential, commerci
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-3.jpg' | relative_url }}" alt="Floor Coating">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/floor-coating.png' | relative_url }}" alt="Floor Coating">
     </div>
     <div class="col-lg-6">
         <h2>Durable & Attractive Floor Coatings</h2>

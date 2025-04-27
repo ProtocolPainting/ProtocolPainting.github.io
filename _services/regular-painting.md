@@ -13,7 +13,7 @@ hero_description: Professional interior and exterior painting for residential an
 
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid w-100 mb-4" src="{{ '/img/service-1.jpg' | relative_url }}" alt="Regular Painting">
+        <img class="img-fluid w-100 mb-4" src="{{ '/img/regular-painting.png' | relative_url }}" alt="Regular Painting">
     </div>
     <div class="col-lg-6">
         <h2>Professional Interior and Exterior Painting</h2>
