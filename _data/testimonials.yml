@@ -5,25 +5,25 @@
   
 - name: Betty Goldstein
   profession: Interior Designer
-  image: img/testimonial-2.jpg
+  image: img/betty-goldstein.png
   testimonial: As an interior designer, I rely on quality painting professionals to bring my visions to life. Protocol Painting consistently delivers exceptional results for my clients. Their color matching is precise, and their finishes are flawless. Truly the best in Bellingham!
 
 - name: Michael Johnson
   profession: Restaurant Owner
-  image: img/testimonial-3.jpg
+  image: img/michael-johnson.png
   testimonial: When our restaurant needed a refresh, Protocol Painting worked around our schedule to minimize disruption to our business. The team was efficient, clean, and their work has received numerous compliments from our customers. Highly recommend!
 
 - name: Jennifer Davis
   profession: Office Manager
-  image: img/testimonial-4.jpg
+  image: img/jennifer-davis.png
   testimonial: We hired Protocol Painting for our office renovation, and they exceeded all expectations. The crew was professional and completed the job on time and within budget. The quality of work was outstanding, and they were accommodating to our working hours.
 
 - name: Steve Anderson
   profession: Property Manager
-  image: img/testimonial-1.jpg
+  image: img/steve-anderson.png
   testimonial: I've used Protocol Painting for multiple properties in my management portfolio. Their consistent quality, reliability, and professionalism make them my go-to painting contractor. Their team is responsive and thorough from estimate to completion.
 
 - name: Sarah Martinez
   profession: Real Estate Agent
-  image: img/testimonial-2.jpg
+  image: img/sarah-martinez.png
   testimonial: I regularly recommend Protocol Painting to my clients preparing to sell their homes. The fresh, professional paint jobs they provide have helped increase property values and reduce time on market. Their work makes a noticeable difference in presentations!
