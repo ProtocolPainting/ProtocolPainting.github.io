@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "5 Popular Paint Colors for 2023"
-date: 2023-01-15
+title: "5 Popular Paint Colors for 2025"
+date: 2025-04-15
 author: Dominick Pazo
 image: img/blog-1.jpg
 categories: [Interior Design, Color Trends]
